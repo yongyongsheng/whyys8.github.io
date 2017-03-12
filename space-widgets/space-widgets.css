@@ -1,0 +1,85 @@
+.wtpl-catalog-item {
+    height:325px; 
+}
+.wptl-catalog-item > .caption {
+    position:relative;padding:0px 10px 0px 10px;line-height:18px !important;
+}
+.wtpl-catalog-box {
+    height:320px;
+    min-width:160px;max-width:192px; 
+    margin-right:10px;
+}
+.wtpl-catalog-box .wtpl-catalog-item {
+    min-width:160px;max-width:192px;
+    padding:10px 0px;
+    display:inline-block;
+    white-space:normal; 
+    vertical-align: top
+} 
+
+.wtpl-viewmorefoot {
+    width:100%;
+    text-align:right;
+    padding:10px 10px 5px 10px
+}
+.wtpl-content {
+    background-color:#FFF;
+    position:relative;clear:both;height:320px;overflow:hidden;
+}
+
+.wtpl-scroll{
+    /* margin-top:50px !important; */
+}
+.wtpl-container
+{
+    min-height:320px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    padding: 0 15px;
+    position: relative;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; 
+}
+.wtpl-container::-webkit-scrollbar {
+    width: 1em;
+}
+.wtpl-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5);
+}
+.wtpl-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: transparent; 
+}
+
+.wtpl_link {
+    color:#666
+}
+
+.wtpl-swiper-button-prev, .wtpl-swiper-button-next {
+    position: absolute;
+    /*top: 50%; 
+    width: 40px;
+    height: 40px;*/
+    top: 0px; 
+    width: 40px;
+    height: 100%;
+    margin-top: 0px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+} 
+.wtpl-swiper-button-prev {
+    background: url(assets/fa_left.png)  no-Repeat center;
+    left: 0px;
+    right: auto;
+} 
+.wtpl-swiper-button-next {
+    background: url(assets/fa_right.png)  no-Repeat center;
+    right: 0px;
+    left: auto;
+}

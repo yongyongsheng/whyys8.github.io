@@ -1,0 +1,105 @@
+<div id="wtpl_mainbanner" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div id="banner-full-area" class="carousel-holder">
+        <div class="swiper-container spacebanner-container" style="width:100% !important;">
+            <div id="{{LAYER_ID}}" class="swiper-wrapper"></div>
+        </div>
+    </div>
+</div>
+<div id="wtpl_sidebanner" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div class="wtpl-content">
+        <div class="col-md-12 wtpl-container">
+            <div id="{{LAYER_ID}}" class="row wtpl_sidebanner_row">
+                <span class="wtpl-catalog-box hidden-xs hidden-sm">
+                    <div class="wtpl-catalog-item">
+                        <a href="{{LINK0_URL}}"><img src="{{IMAGE0_URL}}" class="ximg-responsive" ></a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wtpl_sidebanner_stay" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div class="wtpl-content">
+        <div class="col-md-12 wtpl-container">
+            <div id="{{LAYER_ID}}" class="row wtpl_sidebanner_row">
+                <span class="wtpl-catalog-box">
+                    <div class="wtpl-catalog-item">
+                        <a href="{{LINK0_URL}}"><img src="{{IMAGE0_URL}}" class="ximg-responsive" ></a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wtpl_productcarousel" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div class="wtpl-content">
+        <div class="col-md-12 wtpl-container">
+            <div id="{{LAYER_ID}}" class="row wtpl_sidebanner_row"></div>
+        </div>
+    </div>
+</div>
+<div id="wtpl_productbanner" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div id="{{LAYER_ID}}" class="col-md-12 no-padding"></div>
+</div>
+<div id="wtpl_youtubebanner" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div id="{{LAYER_ID}}" class="col-md-12 no-padding"></div>
+</div>
+<div id="wtpl_4icons" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div id="{{LAYER_ID}}" class="col-md-12 no-padding"></div>
+</div>
+<div id="wtpl_6icons" style="display:none;">
+    <div class="col-md-12 text-center {{HEADER_ACTIVE}}"><h1>{{TITLE}}</h1><h4>{{SUBTITLE}}</h4></div>
+    <div id="{{LAYER_ID}}" class="col-md-12 no-padding"></div>
+</div>
+
+
+<div id="wtpl_ea_banner" style="display:none;">
+    <div class="swiper-slide banner-carousel-slide">
+        <div id="big-banner">
+            <a href="{{link_url}}"><img src="{{image_url}}" alt="banner"></a>
+        </div>
+    </div>
+</div>
+<div id="wtpl_ea_icon" style="display:none;">
+    <a href="{{link_url}}"><img src="{{image_url}}"></a>
+    <h5 class="wtpl_link"><a href="{{link_url}}" class="wtpl_link">{{text}}</a></h5>
+</div>
+<div id="wtpl_ea_itemusual" style="display:none;">
+    <span class="wtpl-catalog-box">
+        <div class="wtpl-catalog-item">
+            <div class="clearfix">
+                <a href="{{item_url}}"><img id="{{id_img}}" src="{{image_url}}" alt="" class="prd_image img-responsive"/></a>
+                <div class="caption" style="padding:0px 10px 0px 10px;line-height:18px">
+                    <h5 id="product-title" class="product_title"><a href="{{item_url}}">{{short_desc}}</a></h5>
+                    <span class="text-red mbr-price">{{final_price}}</span> 
+                    <span class="text-red product-price">{{rebate}}</span>
+                    <p></p>
+                    <span class="reg-price"><span style="color:black">{{regular_price}}</span></span> 
+                    <div class="positionBtnsX" style="line-height:12px;margin-top:8px">{{legends}}</div> 
+                </div>
+            </div>
+        </div>
+    </span>
+</div>
+<div id="wtpl_ea_itemcart" style="display:none;">
+    <span class="wtpl-catalog-box {{id_btn_class}}">
+        <div class="wtpl-catalog-item">
+            <div class="clearfix">
+                <a href="{{item_url}}"><img id="{{id_img}}" src="{{image_url}}" alt="" class="prd_image img-responsive"/></a>
+                <div class="caption" style="padding:0px 10px 0px 10px;line-height:18px">
+                    <h5 id="product-title" class="product_title"><a style="font-size:12px !important" href="{{item_url}}">{{short_desc}}</a></h5>
+                    <span style="font-size:14px !important" class="text-red mbr-price">{{final_price}}</span> 
+                    <span style="font-size:14px !important" class="text-red product-price">{{rebate}}</span>
+                    <a id="{{id_btn}}" class=" btn btn-hachi btn-responsive btn-block p3Addcomplimentary" data-id="{{item_id}}" style="margin:8px 0px 25px 0px"><i class="fa fa-cart-plus" style="font-size:18px"></i>&nbsp;&nbsp; Add To Cart</a>
+                </div>{{JSON}}
+            </div>
+        </div>
+    </span>
+</div>
